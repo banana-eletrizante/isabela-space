@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #07040d;
+  --text-main: #f5f2fa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Força a página a ocupar a tela inteira e centralizar o conteúdo */
+html, body {
+  width: 100vw !important;
+  min-height: 100vh !important;
+  background-color: var(--bg-dark) !important;
+  color: var(--text-main) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Força a raiz do React a usar a tela toda */
+#root {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  min-height: 100vh !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
